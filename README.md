@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.Waclap:CraftyLexerr:v1.0.0")
+    implementation("com.github.Waclap:CraftyLexerr:v1.1.0")
 }
 ```
 
