@@ -3,8 +3,8 @@ plugins {
     `maven-publish`
 }
 
-group = "net.waclap"
-version = "1.0-SNAPSHOT"
+group = "com.github.Waclap"
+version = "v1.1.1"
 
 repositories {
     mavenCentral()
@@ -20,4 +20,12 @@ kotlin {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            from(components["java"])
+        }
+    }
 }
